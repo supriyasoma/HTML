@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <title>Images</title>
+ <style>
+  .bordered{
+border:10px solid red;
+height:200px;
+width:200px;
+}
+.diff-border{
+border:10px dotted;
+border-bottom-color:green;
+border-top-color:red;
+border-left-color:black;
+border-right-color:blue;
+height:200px;
+width:200px;
+}
+.scaling{
+width:100px;
+height:100px;
+}
+.tiling{
+height:300px;
+background-image:url("ibm.jpg");
+}
+.blink {
+            color: #2d38be;
+            font-size: 15px;
+            font-weight: bold;
+        }
+</style>
+</head>
+<body>
+ <h1> Working with Images</h1>
+<h2>Inserting an image</h2>
+<img src="google.jpg">
+<h2>Inserting a single color bordered image</h2>
+<img src="google.jpg" class="bordered">
+<h2> Inserting an image with different colour border</h2>
+<img src="google.jpg" class="diff-border">
+<div class="tiling">
+<h2> tiling Images</h2>
+<img src="google.jpg">
+<img src="google.jpg">
+</div>
+<h2>Clickable image</h2>
+<a href="state1.html">
+<img src="google.jpg">
+</a>
+<h2> Marquee Effect</h2>
+<marquee>
+<img src="google.jpg">
+</marquee>
+<h2> Blink Effect</h2>
+<blink>Google</blink>
+<h2> Overlapping Images</h2>
+<div style="position:absolute">
+<img src="google.jpg"height=100 width=100>
+</div>
+<div style="position:absolute;top:50">
+<img src="google.jpg" height=100 width=100>
+</div>
+</body>
+</html>
